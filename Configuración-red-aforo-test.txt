@@ -1,0 +1,104 @@
+paolo@paolo-virtual-machine:~$ sudo docker network inspect aforo255-test
+[sudo] password for paolo:
+[
+    {
+        "Name": "aforo255-test",
+        "Id": "2c03757c4bc8306bfde4ae219bf2c096a44dddb64b5b1bef5030c633b04d0a39",
+        "Created": "2020-09-05T01:02:02.052967672-05:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.19.0.0/16",
+                    "Gateway": "172.19.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "11639016edf9915b775d039059b9c5433cb9e898c40ce66500b7424033053f61": {
+                "Name": "app-micro-security",
+                "EndpointID": "bd31e9a9181faca7adc5671b4a76b74dfd34a5f2a757b0302603694596f00593",
+                "MacAddress": "02:42:ac:13:00:0a",
+                "IPv4Address": "172.19.0.10/16",
+                "IPv6Address": ""
+            },
+            "154a1c94f4b1539356195648e9caed93bafd1cc3f8d21c4827097b81e652d678": {
+                "Name": "servicekafka-test",
+                "EndpointID": "f44f8e919650787dbe1a4c928d9215173e8e46d2ebff703aab6c05afc863121e",
+                "MacAddress": "02:42:ac:13:00:02",
+                "IPv4Address": "172.19.0.2/16",
+                "IPv6Address": ""
+            },
+            "34982dd46a68ae2511005cbad7cb6f1670a9b316010b6510c6b400b783af6dc0": {
+                "Name": "postgres12-test",
+                "EndpointID": "adf8b87f33954c5741e10b001fb63c0f2a97a1d519ea73bb670b58ba002738ec",
+                "MacAddress": "02:42:ac:13:00:03",
+                "IPv4Address": "172.19.0.3/16",
+                "IPv6Address": ""
+            },
+            "3a765f41fd09ba09c78f80fc9a494247b1fa793f72e201ad99a036c17a32d1a2": {
+                "Name": "sqlservice-test",
+                "EndpointID": "e73513326b0670b1f941c2da6870e45deb12247802495550136b795fd8e3442d",
+                "MacAddress": "02:42:ac:13:00:0b",
+                "IPv4Address": "172.19.0.11/16",
+                "IPv6Address": ""
+            },
+            "7582e71a6bce5b80ed85ff1db5556b385626385c0214bf50e6349e7b23f7322e": {
+                "Name": "app-micro-invoice",
+                "EndpointID": "b88827bb34105aa70b5208de15d32e74ceee7592b46027ddc6bf1a070d93343c",
+                "MacAddress": "02:42:ac:13:00:07",
+                "IPv4Address": "172.19.0.7/16",
+                "IPv6Address": ""
+            },
+            "78b7daa59dce7cc63011b99a2db40442ad1de0221c99d89d87dc7d70ecdde77e": {
+                "Name": "app-micro-configserver",
+                "EndpointID": "39f21e7e5d25adce7f44f8784281bf73908f8f26f90778c897736f5992b8dc2d",
+                "MacAddress": "02:42:ac:13:00:06",
+                "IPv4Address": "172.19.0.6/16",
+                "IPv6Address": ""
+            },
+            "7b02b5b0f89406a3ec790f7ead4b5e4badc62a06954474e1c008b9be821465ee": {
+                "Name": "mongodb-test",
+                "EndpointID": "60f3f6c818291c08602b8a9c45a6c88d9821305481a57587c6d868bd2088a31c",
+                "MacAddress": "02:42:ac:13:00:05",
+                "IPv4Address": "172.19.0.5/16",
+                "IPv6Address": ""
+            },
+            "87d9d9a401705f05b7577585b124e858df60baf92ec27fd2f702aa75d6c99b8d": {
+                "Name": "mysql8-tetst",
+                "EndpointID": "2395c0791ebdcd5dfe8079d91b38c7f8abdcc292452992349f3291bc1234e776",
+                "MacAddress": "02:42:ac:13:00:04",
+                "IPv4Address": "172.19.0.4/16",
+                "IPv6Address": ""
+            },
+            "da22e861bc5b6291fb2e13ce79473620479a70b5c01ab5248e1397cb64be344e": {
+                "Name": "app-micro-pay",
+                "EndpointID": "d03a12b68c72c536dad29e14e62c9c19591a5fec622452baa74e342a1d4d3865",
+                "MacAddress": "02:42:ac:13:00:08",
+                "IPv4Address": "172.19.0.8/16",
+                "IPv6Address": ""
+            },
+            "ecff782e0086cc88a75fa341ea0f8fb6d8399304eafa8632c449e46579ca507b": {
+                "Name": "app-micro-transaction",
+                "EndpointID": "ad1988a46a273cf4b0ab99fd70b80592b1d1b1c306cd18046c56dc95b3c69bf8",
+                "MacAddress": "02:42:ac:13:00:09",
+                "IPv4Address": "172.19.0.9/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+paolo@paolo-virtual-machine:~$
