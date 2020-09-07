@@ -13,5 +13,6 @@ CREATE TABLE IF NOT EXISTS `transactionPay` (
 );
 
 INSERT INTO `operation` (`id_operation`, `amount`, `date`, `invoice_id`) VALUES
-	(1, 10000, '2020-08-19 11:45:00.000000', 4),
-	(2, 10000, '2020-08-19 11:45:00.000000', 4);
+	(1, 150, '07/09/2020', 4),
+	(2, 150, '07/09/2020', 4);
+	(3, 100, '07/09/2020', 4);
